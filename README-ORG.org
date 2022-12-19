@@ -1,0 +1,65 @@
+#+title:     Org Emacs
+#+author:    Hai Ho
+#+email:     hthntts@yahoo.com
+#+OPTIONS: num:nil ^:{}
+
+* Headline
+- =C-RET= Create heading same level (below) | *+org/insert-item-below*
+- =C-S-RET= Create heading same level (above) | *+org/insert-item-above*
+- =C-M-RET= Create subheading | *org-insert-subheading*
+- =M-S-RET= Create TODO heading | *org-insert-todo-heading*
+- =M-h= / =M-l= Change heading level left / right (=+ Shift= move all subtree) | *org-metaleft* *org-metaright*
+- =M-j= / =M-k= Move heading down / up | *org-metadown* *org-metaup*
+- =C-S-h= / =C-S-l= | *org-shiftleft* *org-shiftright*
+
+- =TAB= Rotate current subtree between state | *org-cycle*
+- =S-TAB= Rotate entire buffer between state | *org-shifttab*
+- =z M= Fold everything on current top level | *+org/close-all-folds*
+- =z R= Unfold everything on current top level | *+org/open-all-folds*
+- =z c= Fold the tree | *+org/close-fold*
+- =z o= Unfold the tree | *+org/open-fold*
+- =g H= Back to current heading | *evil-org-top*
+- =g j= Go to next headline | *org-forward-element*
+- =g k= Go to previous headline | *org-backward-element*
+
+* Org
+- =SPC m .= Goto headline | *counsel-org-goto*
+- =SPC m h= Toggle heading | *org-toggle-heading*
+- =SPC m i= Toggle item | *org-toggle-item*
+- =SPC m x= Toggle checkbox | *org-toggle-checkbox*
+- =SPC m t= Todo | *org-todo*
+- =SPC m d s= Add schedule | *org-schedule*
+- =SPC m d d= Add deadline (=S + Arrow= change date of scheduled item) | *org-deadline*
+- =SPC o A= Open agenda | *org-agenda*
+- =SPC m l l= Insert link | *org-insert-Link*
+- =SPC m l t= Toggle link display | *org-toggle-link-display*
+
+* Evil
+- =v a e= Select an element
+- =d a e= Delete an element
+- =v a R= Select a subtree
+- =d a R= Delete subtree
+- =y i R= Yank subtree
+
+* Insert
+- =SPC i s= Insert snippets | *yas-insert-snippet*
+- =SPC i e= Insert emoji | *emojify-insert-emoji*
+- =SPC i u= Insert unicode | *counsel-unicode-char*
+
+* Table
+- =M-x org-table-create= Create table
+- =SPC m b -= Create table headline | *org-table-insert-hline*
+- =M-j= / =M-k= Move current row down / up | *org-metadown* *org-metaup*
+- =M-h= / =M-l= Move current column left / right | *org-metaleft* *org-metaright*
+- =M-S-j= Insert new row (above)
+- =M-S-k= Delete current row
+- =M-S-h= Delete current column
+- =M-S-l= Insert new column (left)
+
+| id | user    | address | number | other |
+|----+---------+---------+--------+-------|
+|  1 | user001 |     123 |    123 | #     |
+|  2 | user002 |     234 |    234 | ##    |
+|  3 | user003 |     345 |    345 | ###   |
+|  4 | user004 |     456 |    456 | ####  |
+|  5 | user005 |     567 |    567 | ##### |

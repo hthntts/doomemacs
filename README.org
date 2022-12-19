@@ -1,0 +1,418 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+title: Doom Emacs
+#+author: Hai Ho
+#+email: hthntts@yahoo.com
+#+OPTIONS: num:nil ^:{}
+
+* Command Abbreviations
+
+- =C= - "Control" key
+- =M= - "Alt" or "Option" key
+- =S= - "Super" or "Command" key
+- =SPC= - "Space" key
+
+* General
+
+- Use =C-z= Toggle vim mode
+- Use =SPC RET= Jump To bookmark
+- Use =SPC := or =M-x= M-x
+- Use =SPC ;= Eval
+- Use =SPC <= Switch buffer -> =C-x b=
+- Use =SPC `= Switch to last buffer
+- Use =SPC SHIFT ,= to switch to all buffers
+
+** +Help
+
+*** Doom
+- Use =SPC h d b= doom/report-bug
+- Use =SPC h d c= doom/goto-private-config-...
+- Use =SPC h d C= doom/goto-private-init-file
+- Use =SPC h d d= doom-debug-mode
+- Use =SPC h d f= doom/help-faq
+- Use =SPC h d h= doom/help
+- Use =SPC h d l= doom/help-search-load-path
+- Use =SPC h d L= doom/help-search-loaded-fi...
+- Use =SPC h d m= doom/help-modules
+- Use =SPC h d n= doom/help-news
+- Use =SPC h d N= doom/help-search-news
+- Use =SPC h d s= doom/help-search-headings
+- Use =SPC h d S= doom/help-search
+- Use =SPC h d t= doom/toggle-profiler
+- Use =SPC h d u= doom/help-autodefs
+- Use =SPC h d v= doom/version
+- Use =SPC h d x= doom/sandbox
+- Use =SPC h d p c= doom/help-package-config
+- Use =SPC h d p d= doom/goto-private-packages...
+- Use =SPC h d p h= doom/help-package-homepage
+- Use =SPC h d p p= doom/help-packages
+
+*** Bindings
+- Use =SPC h b b= describe-bindings
+- Use =SPC h b f= which-key-show-full-keymap
+- Use =SPC h b i= which-key-show-minor-moder...
+- Use =SPC h b k= which-key-show-keymap
+- Use =SPC h b m= which-key-show-major-mode
+- Use =SPC h b t= which-key-show-top-level
+
+*** Reload
+- Use =SPC h r e= doom/reload-env
+- Use =SPC h r f= doom/reload-font
+- Use =SPC h r p= doom/reload-packages
+- Use =SPC h r r= doom/reload
+- Use =SPC h r t= doom/reload-theme
+
+** +Workspaces
+
+- Use =SPC TAB TAB= Display tab bar
+- Use =SPC TAB .= Switch workspace
+- Use =SPC TAB 0= Switch to final workspace
+- Use =SPC TAB 1= or =M-1= Switch to 1st workspace
+- Use =SPC TAB 2= or =M-2= Switch to 2nd workspace
+- Use =SPC TAB 3= or =M-3= Switch to 3rd workspace
+- Use =SPC TAB 4= or =M-4= Switch to 4th workspace
+- Use =SPC TAB 5= or =M-5= Switch to 5th workspace
+- Use =SPC TAB 6= or =M-6= Switch to 6th workspace
+- Use =SPC TAB 7= or =M-7= Switch to 7th workspace
+- Use =SPC TAB 8= or =M-8= Switch to 8th workspace
+- Use =SPC TAB 9= or =M-9= Switch to 9th workspace
+- Use =SPC TAB [= Previous workspace
+- Use =SPC TAB ]= Next workspace
+- Use =SPC TAB `= Switch to last workspace
+- Use =SPC TAB d= Delete this workspace
+- Use =SPC TAB l= Load workspace from file
+- Use =SPC TAB n= New workspace
+- Use =SPC TAB N= New named workspace
+- Use =SPC TAB r= Rename workspace
+- Use =SPC TAB R= Restore last session
+- Use =SPC TAB s= Save workspace to file
+- Use =SPC TAB x= Delete session
+
+** +Buffer
+
+- Use =SPC b -= Toggle narrowing
+- Use =SPC b [= Previous buffer
+- Use =SPC b ]= Next buffer
+- Use =SPC b b= or =SPC ,= Switch workspace buffer
+- Use =SPC b B= Switch buffer
+- Use =SPC b c= Clone buffer
+- Use =SPC b C= Clone buffer other window
+- Use =SPC b d= Kill buffer
+- Use =SPC b i= ibuffer
+- Use =SPC b I= ibuffer workspace
+- Use =SPC b k= Kill buffer
+- Use =SPC b K= Kill all buffers
+- Use =SPC b l= Switch to last buffer
+- Use =SPC b m= Set bookmark
+- Use =SPC b M= Delete bookmark
+- Use =SPC b n= Next buffer
+- Use =SPC b N= New empty buffer
+- Use =SPC b O= Kill other buffers
+- Use =SPC b p= Previous buffer
+- Use =SPC b r= Revert buffer
+- Use =SPC b R= Rename buffer
+- Use =SPC b s= Save buffer
+- Use =SPC b S= Save all buffers
+- Use =SPC b u= Save buffer as root
+- Use =SPC b x= Pop up scratch buffer
+- Use =SPC b X= Switch to scratch buffer
+- Use =SPC b y= Yank buffer -> =C-x h y=
+- Use =SPC b z= Bury buffer
+- Use =SPC b Z= Kill buried buffers
+
+** +Code
+
+- Use =SPC c a= LSP Execute code action
+- Use =SPC c c= Compile
+- Use =SPC c C= Recompile
+- Use =SPC c d= Jump to definition
+- Use =SPC c D= Jump to references
+- Use =SPC c e= Evaluate buffer/region -> =M-x quickrun= (limits 10s)
+- Use =SPC c E= Evaluate & replace region
+- Use =SPC c f= Format buffer/region
+- Use =SPC c i= Find implementations
+- Use =SPC c j= Jump to symbol in current
+- Use =SPC c J= Jump to symbol in any work...
+- Use =SPC c k= Jump to documentation
+- Use =SPC c l= LSP
+- Use =SPC c o= LSP Organize imports
+- Use =SPC c r= LSP Rename
+- Use =SPC c s= Send to repl
+- Use =SPC c t= Find type definition
+- Use =SPC c w= Delete trailing whitespace
+- Use =SPC c W= Delete trailing newlines
+- Use =SPC c x= List errors
+
+** +File
+
+- Use =SPC f c= Open project editorconfig
+- Use =SPC f C= Copy this file
+- Use =SPC f d= Find directory
+- Use =SPC f D= Delete this file
+- Use =SPC f e= Find file in emacs.d
+- Use =SPC f E= Browse emacs.d
+- Use =SPC f f= or =SPC .= Find file
+- Use =SPC f F= Find file from here
+- Use =SPC f l= Locate file
+- Use =SPC f p= Find file in private config
+- Use =SPC f P= Browse private config
+- Use =SPC f r= Recent files
+- Use =SPC f R= Rename/move file
+- Use =SPC f s= Save file -> =C-x C-s=
+- Use =SPC f S= Save file as...
+- Use =SPC f u= Sudo find file
+- Use =SPC f U= Sudo this file
+- Use =SPC f y= Yank file path
+- Use =SPC f Y= Yank file path from project
+
+** +Git
+
+- Use =SPC g '= Forge dispatch
+- Use =SPC g .= Magit file dispatch
+- Use =SPC g /= Magit dispatch
+- Use =SPC g [= Jump to previous hunk
+- Use =SPC g ]= Jump to next hunk
+- Use =SPC g b= Magit switch branch
+- Use =SPC g B= Magit blame
+- Use =SPC g c R= Clone repo
+- Use =SPC g c b= Branch
+- Use =SPC g c c= Commit
+- Use =SPC g c f= Fixup
+- Use =SPC g c i= Issue
+- Use =SPC g c p= Pull request
+- Use =SPC g c r= Initialize repo
+- Use =SPC g C= Magit clone
+- Use =SPC g D= Magit file delete
+- Use =SPC g f c= Find commit
+- Use =SPC g f f= Find file
+- Use =SPC g f g= Find gitconfig file
+- Use =SPC g f i= Find issue
+- Use =SPC g f p= Find pull request
+- Use =SPC g F= Magit fetch
+- Use =SPC g g= Magit status
+- Use =SPC g G= Magit status here
+- Use =SPC g l i= List issues
+- Use =SPC g l n= List notifications
+- Use =SPC g l p= List pull requests
+- Use =SPC g l r= List repositories
+- Use =SPC g l s= List submodules
+- Use =SPC g L= Magit buffer log
+- Use =SPC g o c= Browse commit
+- Use =SPC g o h= Browse homepage
+- Use =SPC g o i= Browse an issue
+- Use =SPC g o I= Browse issues
+- Use =SPC g o o= Browse file or region
+- Use =SPC g o p= Browse a pull request
+- Use =SPC g o P= Browse pull requests
+- Use =SPC g o r= Browse remote
+- Use =SPC g r= Revert hunk at point
+- Use =SPC g R= Revert file
+- Use =SPC g s= stage hunk at point
+- Use =SPC g S= Git stage file
+- Use =SPC g t= Git time machine
+- Use =SPC g U= Git unstage file
+- Use =SPC g y= Copy link to remote
+- Use =SPC g Y= Copy link to homepage
+
+** +Insert
+
+- Use =SPC i e= Emoji
+- Use =SPC i f= Current file name
+- Use =SPC i F= Current file path
+- Use =SPC i p= Evil ex path
+- Use =SPC i r= From evil register
+- Use =SPC i s= Snippet
+- Use =SPC i u= Unicode
+- Use =SPC i y= From clipboard
+
+** +Open
+
+- Use =SPC o -= Dired
+- Use =SPC o a a= Agenda
+- Use =SPC o a m= Tags search
+- Use =SPC o a t= Todo list
+- Use =SPC o a v= View search
+- Use =SPC o A= Org agenda
+- Use =SPC o b= Default browser
+- Use =SPC o d= Start debugger
+- Use =SPC o D= Docker
+- Use =SPC o f= New frame
+- Use =SPC o F= Select frame
+- Use =SPC o i= Open in iTerm
+- Use =SPC o I= Open in new iTerm window
+- Use =SPC o l= Send to Launchbar
+- Use =SPC o L= Send project to Launchbar
+- Use =SPC o o= Reveal in Finder
+- Use =SPC o O= Reveal project in Finder
+- Use =SPC o r= REPL
+- Use =SPC o R= REPL (same window)
+- Use =SPC o t= Toggle vterm popup
+- Use =SPC o T= Open vterm here
+- Use =SPC o u= Send to Transmit
+- Use =SPC o U= Send project to Transmit
+
+** +Project
+
+- Use =SPC p != Run cd in project root
+- Use =SPC p &= Async cmd in project root
+- Use =SPC p .= Browse project
+- Use =SPC p >= Browse other project
+- Use =SPC p a= Add new project
+- Use =SPC p b= Switch to project buffer
+- Use =SPC p c= Compile in project
+- Use =SPC p C= Repeat last command
+- Use =SPC p d= Remove known project
+- Use =SPC p D= Discover projects in folder
+- Use =SPC p e= Edit project .dir-locals
+- Use =SPC p f= or =SPC SPC= Find file in project
+- Use =SPC p F= Find file in other project
+- Use =SPC p g= Configure project
+- Use =SPC p i= Invalidate project cache
+- Use =SPC p k= Kill project buffers
+- Use =SPC p o= Find other file
+- Use =SPC p p= Switch project
+- Use =SPC p r= Find recent project files
+- Use =SPC p R= Run project
+- Use =SPC p s= Save project files
+- Use =SPC p t= List project todos
+- Use =SPC p T= Test project
+- Use =SPC p x= Pop up scratch buffer
+- Use =SPC p X= Switch to scratch buffer
+- Use =M-x projectile-discover-projects-in-search-path=
+
+** +Quit/Session
+
+- Use =SPC q d= Restart emacs server
+- Use =SPC q f= Delete frame
+- Use =SPC q F= Clear current frame
+- Use =SPC q K= Kill Emacs (and daemon)
+- Use =SPC q l= Restore last session
+- Use =SPC q L= Restore session from file
+- Use =SPC q q= Quit Emacs
+- Use =SPC q Q= Quit Emacs without saving
+- Use =SPC q r= Restart & restore Emacs
+- Use =SPC q R= Restart Emacs
+- Use =SPC q s= Quick save current session
+- Use =SPC q S= Save session to file
+
+** +Search
+
+- Use =SPC s b= Search buffer
+- Use =SPC s B= Search all open buffers
+- Use =SPC s d= Search current directory
+- Use =SPC s D= Search other directory
+- Use =SPC s e= Search emacs.d
+- Use =SPC s f= Locate file
+- Use =SPC s i= Jump to symbol
+- Use =SPC s j= Jump list
+- Use =SPC s k= Look up in local docsets
+- Use =SPC s K= Look up in all docsets
+- Use =SPC s l= Jump to visible link
+- Use =SPC s L= Jump to link
+- Use =SPC s m= Jump to bookmark
+- Use =SPC s o= Look up online
+- Use =SPC s O= Look up online (w/ prompt)
+- Use =SPC s p= or =SPC /= Search project
+- Use =SPC s P= Search other project
+- Use =SPC s r= Jump to mark
+- Use =SPC s s= Search buffer
+- Use =SPC s S= Search buffer for thing at...
+- Use =SPC s t= Dictionary
+- Use =SPC s T= Thesaurus
+
+** +Toggle
+
+- Use =SPC t b= Big mode
+- Use =SPC t c= Fill Column Indicator
+- Use =SPC t f= Flycheck
+- Use =SPC t F= Frame fullscreen
+- Use =SPC t g= Evil goggles
+- Use =SPC t I= Indent style
+- Use =SPC t l= Line numbers
+- Use =SPC t p= org-tree-slide mode
+- Use =SPC t r= Read-only mode
+- Use =SPC t t= Pomodoro timer
+- Use =SPC t v= Visible mode
+- Use =SPC t w= Soft line wrapping
+- Use =SPC t z= Zen mode
+- Use =SPC t Z= Zen mode (fullscreen)
+
+** +Window
+
+- Use =SPC w v= evil-window-vsplit
+- Use =SPC w s= evil-window-split
+- Use =SPC w w= evil-window-next
+- Use =SPC w W= evil-window-prev
+- Use =SPC w q= evil-quit
+- Use =SPC w d= or =SPC w c= evil-window-delete
+- Use =SPC w += evil-window-increase-height
+- Use =SPC w -= evil-window-decrease-height
+- Use =SPC w >= evil-window-increase-width
+- Use =SPC w <= evil-window-decrease-width
+- Use =SPC w h/j/k/l= evil-window-left/down/up/right
+- Use =SPC w H/J/K/L= +evil/window-move-left/down/up/right
+
+** Dired
+
+- Press =SPC f d= to open dired. -> =C-x d=
+- Move with =h=, =j=, =k=, =l=
+- Use =RET= to go to a folder or open a file.
+- Use =-= for going one folder back.
+- Use =m= to mark.
+- Use =u= to unmark files or directories.
+- Use =d= to mark the files for deletion, press =x= to delete.
+- Use =+= for creating a new directory.
+- Use =U= to unselect all.
+- Use =t= to invert the selection.
+- Use =M= to change permissions.
+- Use =o= to sort by modes.
+- Use =O= to change the owner.
+- Use =C= to copy.
+- Use =R= to move.
+- Use =(= for toggle simple view.
+- Use =SPC .= to create or find a file.
+- Use =i= to edit file/dir name.
+
+* Other
+
+** Delete blank line
+- =C-x h= =M-x flush-lines RET ^$ RET=
+
+**  Delete duplicate line
+- =C-x h= =M-x delete-duplicate-lines RET=
+
+** Convert tab to space
+- =C-x untabify RET=
+
+* Quick, horizontal movements with Evil-snipe
+
+** Inine navigation
+
+- =f= and then the letter you want to navigate to.
+  + =,= will go backward
+  + =;= will go forward after that "find"
+- =t= to find and move cursor to the charachter before what you've searched.
+- =v= puts you in visual mode. You can select text by with =v t some-char-you-navigate-to= or =v f some-char-you-navigate-to=
+- =;= to jump to the next find
+- =,= to jump to the previous one
+- =s= to snipe
+
+** Long distance navigation inside the file
+
+- =g s SPC= to use avy and going to a certain word in file.
+- You can remove a word with
+  =g s SPC select-one-letter x select-the-removal-spot=
+  + You can use =X= to stay in your original spot of search
+- You can go =g s space select-one-letter i select-the-correction-spot=
+  to correct the spelling of the search
+  - Install ispell on your OS first
+- You can =yank= a word from one place to another with
+  =g s SPC select-one-letter y select-the-correction-spot-to-paste=
+- Use =t= to "teleport" the word from one place to another
+  =g s SPC select-one-letter t select-the-correction-spot-to-teleport=
+
+** Multiple cursor Evil-multiedit
+
+- =M-d= will select the current word
+- =M-D= will find the occurrence upward
+- =CTRL n= for next selection =CTRL p= for previous
+- =D= will delete all occurrences
