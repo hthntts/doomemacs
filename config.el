@@ -280,10 +280,6 @@
       org-agenda-current-time-string
       "⭠ now ─────────────────────────────────────────────────")
 
-;;; Org grip mode
-(setq grip-github-user "hthntts")
-(setq grip-github-password "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")
-
 ;;; Org reveal
 (after! org
   (load-library "ox-reveal")
