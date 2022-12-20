@@ -97,7 +97,7 @@
 ;; (set-face-attribute 'default nil :height 140)
 
 ;; Disable exit confirmation
-(setq confirm-kill-emacs nil)
+;; (setq confirm-kill-emacs nil)
 ;; When at the beginning of the line, make Ctrl-K remove the whole line, instead of just emptying it
 (setq kill-whole-line t)
 ;; Enable line numbers
