@@ -295,11 +295,6 @@
           key
           (lambda () (interactive) (find-file file)))))
 
-(zz/add-file-keybinding "C-c z w" (concat org-directory "work.org") "work.org")
-(zz/add-file-keybinding "C-c z i" (concat org-directory "ideas.org") "ideas.org")
-(zz/add-file-keybinding "C-c z p" (concat org-directory "projects.org") "projects.org")
-(zz/add-file-keybinding "C-c z d" (concat org-directory "diary.org") "diary.org")
-
 ;;; Org tux
 (defun tux/org-convert-keyword-case-to-lower ()
   (interactive)
